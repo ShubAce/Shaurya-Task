@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="task.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Shaurya Registration Form</title>
+	</head>
+	<body>
+		<div class="top">
+			<h1>Shaurya : IIT KGP sports fest</h1>
+			<button id="Register">Register Here</button>
+		</div>
+
+		<main>
+			<section class="container">
+				<header>Registration Form</header>
+				<form
+					action="#"
+					class="form"
+				>
+					<div class="input-box">
+						<label for="name">Full Name</label>
+
+						<input
+							type="text"
+							placeholder="Enter full name"
+							id="name"
+						/>
+						<div class="error"></div>
+					</div>
+					<div class="input-box">
+						<label for="email">Email address</label>
+
+						<input
+							type="email"
+							placeholder="Enter Email"
+							id="email"
+						/>
+						<div class="error"></div>
+					</div>
+					<div class="input-box">
+						<label for="password"> Password</label>
+						<input
+							type="password"
+							id="password"
+							placeholder="Password"
+						/>
+						<div class="error"></div>
+					</div>
+					<div class="input-box">
+						<label for="number">Phone Number</label>
+						<input
+							type="number"
+							placeholder="Enter phone number"
+							id="number"
+						/>
+						<div class="error"></div>
+					</div>
+					<div class="gender-box">
+						<h3>Gender</h3>
+						<div class="gender-option">
+							<div class="gender">
+								<input
+									type="radio"
+									id="check-female"
+									name="gender"
+									value="Female"
+								/>
+								<label for="check-female">Female</label>
+
+								<div class="gender">
+									<input
+										type="radio"
+										id="check-male"
+										name="gender"
+										value="Male"
+									/>
+									<label for="check-male">Male</label>
+								</div>
+								<div class="gender">
+									<input
+										type="radio"
+										id="check-other"
+										name="gender"
+										value="Other"
+									/>
+									<label for="check-other">Other</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-box-sport">
+						<label>Select Sport</label>
+						<div class="select-box-sport">
+							<select id="SelectSport">
+								<option hidden>Sports</option>
+								<option value="Athletics">Athletics</option>
+								<option value="Badmiton">Badmiton</option>
+								<option value="Basketball">Basketball</option>
+
+								<option value="Chess">Chess</option>
+								<option value="Football">Football</option>
+								<option value="Hockey">Hockey</option>
+								<option value="Squash">Squash</option>
+							</select>
+						</div>
+					</div>
+					<button
+						id="submit"
+						type="submit"
+					>
+						Submit
+					</button>
+				</form>
+			</section>
+		</main>
+		<div class="done">
+			<h2>Thank you!</h2>
+			<h3>Registration Done</h3>
+		</div>
+		<script src="task.js"></script>
+	</body>
+</html>

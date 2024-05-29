@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: "Nunito", sans-serif;
+	background-color: #cdb4db;
+}
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main {
+	min-height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	background-color: rgba(177, 73, 238, 0.244);
+}
+#Register {
+	height: 28px;
+	font-size: 1rem;
+	font-weight: 400;
+	border: none;
+	cursor: pointer;
+	color: white;
+	background-color: #b960ec;
+	border-radius: 5px;
+	padding: 2px 15px;
+}
+.container {
+	position: relative;
+	background-color: #ffffff9e;
+	padding: 15px 30px;
+	border-radius: 10px;
+}
+.container header {
+	font-size: 1.5em;
+	font-weight: 500;
+	text-align: center;
+}
+.container .form {
+	margin-top: 15px;
+}
+.form .input-box {
+	margin-top: 20px;
+	width: 100%;
+}
+.input-box label {
+	color: #333;
+}
+.form .input-box input,
+.select-box {
+	position: relative;
+	height: 30px;
+	width: 100%;
+	font-size: 1rem;
+	margin-top: 5px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 0 15px;
+}
+.input-box-sport input {
+	position: relative;
+	height: 30px;
+	width: 100%;
+	font-size: 1rem;
+	margin-top: 5px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 0 15px;
+}
+.select-box-sport select {
+	position: relative;
+	height: 30px;
+	width: 200px;
+	font-size: 1rem;
+	margin-top: 5px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 0 15px;
+}
+.input-box input:focus {
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .gender-box {
+	margin-top: 15px;
+	padding-bottom: 10px;
+	color: #333;
+}
+.gender input {
+	accent-color: #b149ee;
+}
+.gender-box h3 {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+.form .gender-option,
+.gender {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-right: 10px;
+}
+
+.select-box {
+	margin-top: 15px;
+}
+.select-box select {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+}
+.form button {
+	height: 28px;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 25px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: white;
+	background-color: #cdb4db;
+}
+.form button:hover {
+	background-color: #b78ad1c2;
+}
+@media (max-width: 500px) {
+	.from .column {
+		flex-wrap: wrap;
+	}
+}
+
+.move {
+	padding-left: 10px;
+}
+.done {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 60vh;
+	background-color: #b960ec;
+}
+.error {
+	color: red;
+}
+
+select,
+option:hover {
+	background-color: #b960eca7;
+}
