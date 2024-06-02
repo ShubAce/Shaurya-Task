@@ -36,6 +36,7 @@
 							type="text"
 							placeholder="Enter full name"
 							id="name"
+							required
 						/>
 						<div class="error"></div>
 					</div>
@@ -115,19 +116,33 @@
 								<option value="Squash">Squash</option>
 							</select>
 						</div>
+						<div class="error"></div>
 					</div>
-					<button
-						id="submit"
-						type="submit"
-					>
-						Submit
-					</button>
+					<div class="column">
+						<div class="left">
+							<button
+								id="submit"
+								type="submit"
+							>
+								Submit
+							</button>
+
+							<button
+								id="clear"
+								type="reset"
+							>
+								Reset
+							</button>
+						</div>
+					</div>
 				</form>
 			</section>
 		</main>
+		<div class="total"></div>
 		<div class="done">
 			<h2>Thank you!</h2>
-			<h3>Registration Done</h3>
+			<h3>Registration Done!!</h3>
+			<button id="RegistrationAgain">Register Again</button>
 		</div>
 		<script src="task.js"></script>
 	</body>
