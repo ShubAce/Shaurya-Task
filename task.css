@@ -24,11 +24,12 @@ main {
 	margin-top: 0;
 	margin: 0 auto;
 	border-radius: 10px;
+	min-width: 290px;
 }
 @media (max-width: 450px) {
 	main {
 		width: 100%;
-		margin: auto;
+		margin: 0 auto;
 		transition: 400ms ease-in-out;
 	}
 }
@@ -150,11 +151,11 @@ main {
 	cursor: pointer;
 	margin: 5px;
 	color: white;
-	background-color: #cdb4db;
+	background-color: #d284ff;
 }
 .form button:hover {
 	transition: all 0.2s ease;
-	background-color: #b78ad1c2;
+	background-color: #b847f9ec;
 }
 @media (max-width: 500px) {
 	.from .column {
@@ -173,7 +174,8 @@ main {
 	height: 60vh;
 	background-color: #b960ec8e;
 	border-radius: 30px;
-	transition: 3s ease-in-out;
+	width: 70%;
+	margin: auto;
 }
 .done h2 {
 	font-size: 50px;
@@ -185,6 +187,7 @@ main {
 .error,
 .success {
 	color: red;
+	/* font-size: small; */
 }
 
 select,
