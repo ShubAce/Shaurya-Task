@@ -9,15 +9,15 @@ const name = document.querySelector("#name");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const phone = document.querySelector("#number");
+const sport = document.querySelector("#SelectSport");
 const total = document.querySelector(".total");
+
 let totalRegistration = 0;
 
 total.innerText = `Total registration till now: ${totalRegistration}`;
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	validateInputs();
-	totalRegistration++;
-	total.innerText = `Total registration till now: ${totalRegistration}`;
 });
 
 const genderValue = () => {
@@ -54,14 +54,8 @@ const validateInputs = () => {
 	const passwordValue = password.value.trim();
 	const phoneValue = phone.value;
 	const sport = document.querySelector("#SelectSport");
+	const gender = document.getElementsByName("gender");
 	let error = 0;
-	// if (sport.value === "Sports") {
-	// 	error += 1;
-	// 	setError(sport, "Please select any sport");
-	// 	alert("Select any sport value");
-	// } else {
-	// 	setSuccess(sport);
-	// }
 	if (nameValue === "") {
 		setError(name, "username is required");
 		if (setError) {
@@ -122,6 +116,13 @@ const validateInputs = () => {
 			alert("enter correct number");
 		}
 	}
+	if (sport.value === "Sports") {
+		error += 1;
+		setError(sport, "Please select any sport");
+		alert("Select any sport value");
+	} else {
+		setSuccess(sport);
+	}
 	if (error === 0) {
 		console.log(`Name: ${String(nameValue)}`);
 		console.log(`Email: ${String(emailValue)}`);
@@ -131,8 +132,9 @@ const validateInputs = () => {
 		genderValue();
 		const popup = document.querySelector("main");
 		const thank = document.querySelector(".done");
-
 		popup.style.display = "none";
 		thank.style.display = "flex";
+		totalRegistration++;
+		total.innerText = `Total registration till now: ${totalRegistration}`;
 	}
 };
